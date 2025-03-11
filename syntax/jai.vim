@@ -56,6 +56,7 @@ syntax match jaiConstant "\v<[A-Z0-9,_]+>" display
 syntax match jaiInteger "\<\d\+\>" display
 syntax match jaiFloat "\<[0-9][0-9_]*\(\.[0-9_]\+\)\?\%([eE][+-]\=[0-9_]\+\)\=" display
 syntax match jaiHex "\<0x[0-9A-Fa-f]\+\>" display
+syntax match jaiBinary "\<0b[0-9A-Fa-f]\+\>" display
 
 syntax match jaiMacro "#\<\w\+\(,\S*\)\?" display
 
@@ -124,6 +125,7 @@ highlight def link jaiNull Type
 highlight def link jaiInteger Number
 highlight def link jaiFloat Float
 highlight def link jaiHex Number
+highlight def link jaiBinary Number
 
 highlight def link jaiSOA Keyword
 highlight def link jaiAOS Keyword
